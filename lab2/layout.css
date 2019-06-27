@@ -1,0 +1,86 @@
+body{
+    align-content: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    background-image: url(http://mumstudents.org/cs472/2019-06-RS/Labs/2/background.gif);
+    background-repeat: repeat;
+}
+.all {
+    border-width: 10px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 25px;
+    background-color: white;
+}
+
+.top{
+    background-color: #A8F0F0;
+    text-align: right;
+}
+.intro{
+    font-size: 14pt;
+    text-align: right;
+}
+.first{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #C2E9E9;
+    border-radius: 15px;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: justify;
+    overflow: auto;
+}
+.date1{
+    border-bottom: 2px dashed blue;
+}
+.second{
+    border-width: 4px;
+    border-style: solid;
+    border-color: #C2E9E9;
+    border-radius: 10px;
+    background-color: #E8FBFB;
+    padding: 5px;
+    margin-top: 10px;
+    text-align: justify;
+    overflow: auto;
+}
+.date2{
+    border-bottom: 2px dashed blue;
+}
+img{
+    float: right;
+}
+nav {
+    float: left;
+    width: 25%;
+}
+.friend{
+    float: left;
+    width: 15%;
+    background-color: #E8FBFB;
+    border-style:solid;
+    border-color: green;
+    border-width: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+}
+.space{
+    float: left;
+    width: 15%;
+    background-color: #E8FBFB;
+    border-style:solid;
+    border-color: green;
+    border-width: 5px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-right: 10px;
+    border-radius: 15px;
+    visibility: hidden;
+}
+.footer{
+    float: left;
+}
