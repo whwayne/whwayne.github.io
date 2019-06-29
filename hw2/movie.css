@@ -61,18 +61,21 @@ h1{
     padding: 8px;
     margin-left: 2%;
     margin-right:2%;
+    margin-top: 5px;
     float:left;
 }
 .review img{
   margin-right: 5px;
   float: left;
 }
-
+.short{
+    width:230px;
+}
 .group{
     float: left;
+    margin-bottom:20pt;
 }
 .footer{
-    position: absolute;
     width: 800px;
     height: 25px;
     background-color: #A2B964;
@@ -82,14 +85,16 @@ h1{
     bottom: 0;
 }
 .reviewer{
-    font-size:8pt;
+    font-size:10pt;
 }
 .reviewer .publication{
     font-style: italic;
 }
 .reviewer img{
     float: left;
+    overflow: auto;
 }
+<<<<<<< HEAD
 dd{
     margin-bottom: 10pt;
 }
@@ -98,9 +103,20 @@ ul{
     margin: 0;
     padding:0;
 }
+=======
+>>>>>>> c9ca8584df1450016e755ad09b0eae7642441e5a
 dt {
    font-weight: bold;
 }
+dd{
+    margin-bottom:15pt;
+}
+ul{
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
 .valid{
     float: right;
 }
