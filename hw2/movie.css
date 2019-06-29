@@ -90,7 +90,14 @@ h1{
 .reviewer img{
     float: left;
 }
-
+dd{
+    margin-bottom: 10pt;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+}
 dt {
    font-weight: bold;
 }
