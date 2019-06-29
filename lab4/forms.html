@@ -8,26 +8,109 @@
 
 	<body>
 		<h1>Check out</h1>
-		<div id="personal">
-			<label>First name : </label><input name="firstname" />
-			<label>Last name : </label><input name="lastname" />
-			<label>Email address : </label><input name="email" />
-			<label>Country : </label>
-			    <select name="country"> 
-				   <option>Mexico</option> 
-				   <option>Canada</option>
-				   <option selected>The U.S.</option>
-				    <option>China</option>
-				</select>
-		</div>
-
-
-
-		<div id="bill"></div>
-		
-		<div id="ship"></div>
-		<div id="payment"></div>
-		<div id="agree"></div>
-	
+		   <form action="summit.jsp">
+				<div id="personal">
+					<fieldset>
+					<legend>Personal details:</legend>
+					<label>First name : </label>
+					<input type="text" name="firstname" value="Mickey">
+					<br>
+					<label>Last name : </label>
+					<input type="text" name="lastname" value="Mouse">
+					<br>
+					<label>SSN : </label>
+					<input type="text" name="ssn" />
+					<br>
+					<label>Email address : </label>
+					<input type="text" name="email" />
+					<br>
+					<label>Country : </label>
+						<select name="country"> 
+						<option>Mexico</option> 
+						<option>Canada</option>
+						<option selected>The U.S.</option>
+							<option>China</option>
+						</select>
+					</fieldset>
+				</div>
+				<div id="bill">	
+						<fieldset>
+						<legend>Billing Address:</legend>
+						<label>Full name : </label>
+						<input type="text" name="fullname" >
+						<br>
+						<label>Street Address : </label>
+						<input type="text" name="line1" >
+						<br>
+						<input type="text" name="line2" value="optional">
+						<br>
+						<label>Zip Code : </label>
+						<input type="text" name="zip" />
+						<br>
+						<label for="phone">Phone:</label>
+						<input type="tel" id="phone" name="phone"
+							pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+							required>
+						<small>Format: 123-456-7890</small>
+						<br>
+						<label>Email address : </label>
+						<input type="text" name="email" />	
+						<br>
+						<input type="checkbox" name="ship" checked/> Ship to my Billing Address
+						</fieldset>	
+					</div>
+					<div id="ship">
+							<fieldset>
+								<legend>Shipping Address:(* These field are required)</legend>
+								<label>Full name * : </label>
+								<input type="text" name="fullname" >
+								<br>
+								<label>Address line1 * : </label>
+								<input type="text" name="line1" >
+								<br>
+								<label>Address line2  : </label>
+								<input type="text" name="line2" value="optional">
+								<br>
+								<label>Zip Code * : </label>
+								<input type="text" name="zip" />
+								<br>
+								<label>City : </label>
+								<input type="text" name="city" />
+								<br>
+								<label>Country * : </label>
+									<select name="country"> 
+									<option>Mexico</option> 
+									<option>Canada</option>
+									<option selected>The U.S.</option>
+										<option>China</option>
+									</select>
+								<br>
+								<label for="start">Arrvial date:</label>
+								<input type="date" id="at" name="arrvial-at"
+										   value="2019-07-22"
+										   min="2019-07-01" max="2019-12-31">
+							</fieldset>
+					 </div>	
+					 <div id="payment">
+							<fieldset>
+							<legend>Payment Information</legend>
+								<input type="radio" name="c1" value="visa" checked /> Visa 
+								<input type="radio" name="c1" value="mastercard" /> MasterCard 
+								<input type="radio" name="c1" value="amex" /> American Express
+							</fieldset>
+					</div>
+					<div id="agree">
+							<fieldset>
+							<legend>Agreement</legend>
+								<textarea rows="10" cols="60">Agreement.
+								</textarea>
+								<input type="radio" name="c2" value="a" checked /> Agree 
+								<input type="radio" name="c2" value="r" /> Reject 
+							</fieldset>
+					</div>	
+					<div id="btn">
+							<input type="button" value="Submit">
+					</div>
+		</form> 	
 	</body>
 </html>
