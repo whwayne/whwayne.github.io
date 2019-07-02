@@ -1,0 +1,44 @@
+body{
+    background-color:#CCCCFF;
+    font-family: sans-serif;
+    font-size: 14pt;
+    font-weight: bold;
+}
+h1{
+    font-size: 32pt;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+}
+.txt_input{
+    width:100%;
+    margin:auto;
+}
+.txt{
+    width:90%;
+    margin:auto;
+}
+
+textarea{
+    width: 90%;
+    height: 400px;
+    font-family: monospace;
+    font-size: 12pt;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+
+.control {
+    width:100%;
+    margin: auto;
+}
+.group{
+    width:40%;
+    margin:auto;
+}
+fieldset{
+    border: 5px solid black;
+    display: inline;
+}
