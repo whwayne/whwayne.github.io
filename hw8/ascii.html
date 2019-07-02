@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ASCIImation</title>
+		<meta charset="utf-8" />
+        <link href="./ascii.css" type="text/css" rel="stylesheet" />
+        <script src="./ascii.js" type="text/javascript"></script>
+		<script src="./animations.js" type="text/javascript"> </script>
+
+	</head>
+
+	<body>
+        <h1>CS472: ASCII Animation Viewer</h1>
+
+        <div class="all">
+             <div class="txt_input">
+                 <div class="txt">
+                    <textarea id="textarea" rows="20" cols="80">
+                    </textarea>
+                </div>
+            </div>
+            <div class="control">
+                <div class="group">
+                    <fieldset>
+                        <legend>Play Controls:</legend>
+                            <input type="button" id="start" value="Start">
+                            <input type="button" id="stop" value="Stop">
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Animations:</legend>
+                            <select name="ani_slt"> 
+                                <option>Blank</option> 
+                                <option>Exercise</option>
+                                <option >Juggler</option>
+                                <option>Bike</option>
+                                <option>Dive</option>
+                                <option>Custom</option>
+                            </select>
+                            
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Size:</legend>
+                            <select name="size_slt"> 
+                                <option>Tiny</option> 
+                                <option>Small</option>
+                                <option >Medium</option>
+                                <option>Large</option>
+                                <option>Extra Large</option>
+                                <option>XXL</option>
+                            </select>
+                    </fieldset>
+                    
+                    <fieldset>
+                        <legend>Speed:</legend>
+                            <input type="checkbox" id ="ckbox"/> Turbo 
+                    </fieldset>
+                </div>
+            </div>
+	</div>
+	</body>
+</html>
