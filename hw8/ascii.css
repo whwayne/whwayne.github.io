@@ -11,10 +11,6 @@ h1{
     margin: 0;
 }
 .txt_input{
-    width:100%;
-    margin:auto;
-}
-.txt{
     width:90%;
     margin:auto;
 }
@@ -31,14 +27,15 @@ textarea{
 }
 
 .control {
-    width:100%;
+    width:60%;
     margin: auto;
 }
-.group{
-    width:40%;
-    margin:auto;
-}
+
 fieldset{
     border: 5px solid black;
     display: inline;
+}
+
+.footer{
+    float: right;
 }
