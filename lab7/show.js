@@ -17,8 +17,6 @@ function createClick() {
     name.value = "";
     deposit.value = "";
 
-
-
     function Account(name, deposit) {
         this.name = name;
         this.deposit = deposit;
