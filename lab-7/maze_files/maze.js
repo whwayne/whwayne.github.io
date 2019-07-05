@@ -22,7 +22,7 @@ $(function(){
        
     });
 
-    $("#maze").mouseout(function(){
+    $("#maze").mousemove(function(){
         $('[class=boundary]').addClass("youlose");
         $("h2").text("Sorry you lost. :[");
     });
