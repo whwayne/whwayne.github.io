@@ -1,9 +1,10 @@
 $(function(){
     $('[class=boundary]').mouseover(function(){
         $(this).addClass("youlose");
+        $("h2").text("Sorry you lost. :[");
     });
 
-    $("#end").click(function(){
+    $("#end").mousemove(function(){
         if(($("#boundary1").hasClass("youlose"))||($("#boundary2").hasClass("youlose"))||
            ($("#boundary3").hasClass("youlose"))||($("#boundary4").hasClass("youlose"))||
            ($("#boundary5").hasClass("youlose"))){
@@ -17,15 +18,17 @@ $(function(){
     });
 
     $("#start").click(function(){
-        $('[class=boundary]').removeClass("youlose");
+        $('[class=boundary]').removeClass("youlose")
+        css("background-color", "blue");
 
        
     });
-
+/*
     $("#maze").mousemove(function(){
         $('[class=boundary]').addClass("youlose");
         $("h2").text("Sorry you lost. :[");
     });
+    */
     
 
 
